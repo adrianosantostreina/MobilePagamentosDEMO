@@ -1,0 +1,663 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object tbcMain: TTabControl
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      380s
+      521s
+      380s
+      521s
+      380s
+      521s)
+    object tbiMesas: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 126.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Mesas'
+      ExplicitSize.cx = 126.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lytGeral: TLayout
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 521.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout1: TLayout
+          Align = Top
+          Size.Width = 380.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Button2: TButton
+            Align = Right
+            Position.X = 291.000000000000000000
+            Size.Width = 89.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Limpar'
+            OnClick = Button2Click
+          end
+          object Button1: TButton
+            Align = Client
+            Size.Width = 291.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Mesas'
+            OnClick = Button1Click
+          end
+        end
+        object flowMesas: TGridLayout
+          Align = Client
+          ItemHeight = 64.000000000000000000
+          ItemWidth = 64.000000000000000000
+          Orientation = Horizontal
+          Size.Width = 380.000000000000000000
+          Size.Height = 479.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+    end
+    object tbiResumo: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 126.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Resumo'
+      ExplicitSize.cx = 126.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Contents
+        Fill.Color = claWhite
+        Size.Width = 380.000000000000000000
+        Size.Height = 521.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 380.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblTituloResumo: TLabel
+          Align = Contents
+          Size.Width = 380.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Resumo da Mesa'
+          TabOrder = 1
+        end
+        object Button3: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 0
+          OnClick = Button3Click
+        end
+      end
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+        ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 366.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        ShowSelection = False
+      end
+      object Layout3: TLayout
+        Align = Bottom
+        Position.Y = 464.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Button4: TButton
+          Align = Client
+          StyledSettings = [Family, Size, Style]
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 372.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Fechar Conta'
+          TextSettings.FontColor = claWhite
+          TintColor = claGreen
+          OnClick = Button4Click
+        end
+      end
+      object Layout4: TLayout
+        Align = Bottom
+        Position.Y = 414.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label2: TLabel
+          Align = Client
+          StyledSettings = [Family, Size, FontColor]
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Size.Width = 88.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Total'
+          TabOrder = 0
+        end
+        object lblTotal: TLabel
+          Align = Right
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Position.X = 104.000000000000000000
+          Size.Width = 272.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 40.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Trailing
+          Text = '0,00'
+          TabOrder = 1
+        end
+      end
+    end
+    object tbiPagamento: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 128.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Pagamento'
+      ExplicitSize.cx = 128.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 521.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object recBack: TRectangle
+          Align = Contents
+          Fill.Color = claWhite
+          Size.Width = 380.000000000000000000
+          Size.Height = 521.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object lytNumeros: TLayout
+          Align = Center
+          Size.Width = 380.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lblNumero: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 129.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 28.000000000000000000
+            TextSettings.FontColor = claSlategray
+            TextSettings.HorzAlign = Trailing
+            TextSettings.VertAlign = Leading
+            Text = 'Valor da Venda'
+            TabOrder = 0
+          end
+        end
+        object lytTeclado: TLayout
+          Align = Bottom
+          Position.Y = 136.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 319.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object grdNumeros: TGridPanelLayout
+            Align = Client
+            Size.Width = 380.000000000000000000
+            Size.Height = 319.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 34.964572096122590000
+              end
+              item
+                Value = 33.471336672218430000
+              end
+              item
+                Value = 31.564091231658980000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = btn1
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = btn2
+                Row = 0
+              end
+              item
+                Column = 2
+                Control = btn3
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = btn4
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = btn5
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = btn6
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = btn7
+                Row = 2
+              end
+              item
+                Column = 1
+                Control = btn8
+                Row = 2
+              end
+              item
+                Column = 2
+                Control = btn9
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = btn00
+                Row = 3
+              end
+              item
+                Column = 1
+                Control = btn0
+                Row = 3
+              end
+              item
+                Column = 2
+                Control = btnX
+                Row = 3
+              end
+              item
+                Column = 0
+                Control = BtnVirgula
+                Row = 4
+              end
+              item
+                Column = 1
+                Control = BtnLimparTudo
+                Row = 4
+              end>
+            RowCollection = <
+              item
+                Value = 25.082758060012920000
+              end
+              item
+                Value = 24.970215927936330000
+              end
+              item
+                Value = 24.941822441556700000
+              end
+              item
+                Value = 25.005203570494050000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object btn1: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.865371704101600000
+              Size.Height = 59.472618103027340000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = '1'
+              OnClick = OnDigitar
+            end
+            object btn2: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 119.191085815429700000
+              Size.Height = 59.472618103027340000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = '2'
+              OnClick = OnDigitar
+            end
+            object btn3: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 111.943542480468800000
+              Size.Height = 59.472618103027340000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = '3'
+              OnClick = OnDigitar
+            end
+            object btn4: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.865371704101600000
+              Size.Height = 59.169883728027340000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = '4'
+              OnClick = OnDigitar
+            end
+            object btn5: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 119.191085815429700000
+              Size.Height = 59.169883728027340000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = '5'
+              OnClick = OnDigitar
+            end
+            object btn6: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 111.943542480468800000
+              Size.Height = 59.169883728027340000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = '6'
+              OnClick = OnDigitar
+            end
+            object btn7: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.865371704101600000
+              Size.Height = 59.093505859375000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = '7'
+              OnClick = OnDigitar
+            end
+            object btn8: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 119.191085815429700000
+              Size.Height = 59.093505859375000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Text = '8'
+              OnClick = OnDigitar
+            end
+            object btn9: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 111.943542480468800000
+              Size.Height = 59.093505859375000000
+              Size.PlatformDefault = False
+              TabOrder = 8
+              Text = '9'
+              OnClick = OnDigitar
+            end
+            object btn0: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 119.191085815429700000
+              Size.Height = 59.263992309570310000
+              Size.PlatformDefault = False
+              TabOrder = 9
+              Text = '0'
+              OnClick = OnDigitar
+            end
+            object btn00: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.865371704101600000
+              Size.Height = 59.263992309570310000
+              Size.PlatformDefault = False
+              TabOrder = 10
+              Text = '00'
+              TintColor = claSlategray
+              OnClick = OnDigitar
+            end
+            object btnX: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 111.943542480468800000
+              Size.Height = 59.263992309570310000
+              Size.PlatformDefault = False
+              TabOrder = 11
+              Text = 'X'
+              TintColor = claSlategray
+              OnClick = OnDigitar
+            end
+            object BtnVirgula: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.865371704101600000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 12
+              Text = ','
+              OnClick = OnDigitar
+            end
+            object BtnLimparTudo: TButton
+              Align = Client
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 119.191085815429700000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 13
+              Text = 'XX'
+              OnClick = OnDigitar
+            end
+          end
+        end
+        object lytBotoes: TLayout
+          Align = Bottom
+          Position.Y = 455.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 66.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object btnCancelar: TButton
+            Align = Left
+            StyledSettings = [Family, Size, Style]
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 129.000000000000000000
+            Size.Height = 58.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cancelar'
+            TextSettings.FontColor = claWhite
+            TintColor = claRed
+            OnClick = btnCancelarClick
+          end
+          object btnContinuar: TButton
+            Align = Client
+            StyledSettings = [Family, Size, Style]
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 235.000000000000000000
+            Size.Height = 58.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Continuar'
+            TextSettings.FontColor = claWhite
+            TintColor = claGreen
+          end
+        end
+      end
+    end
+  end
+  object actMain: TActionList
+    Left = 304
+    Top = 387
+    object actChangeTab: TChangeTabAction
+      Category = 'Tab'
+    end
+  end
+  object MemPedidos: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 304
+    Top = 329
+    object MemPedidosID: TIntegerField
+      FieldName = 'ID'
+    end
+    object MemPedidosITEM: TStringField
+      FieldName = 'ITEM'
+      Size = 50
+    end
+    object MemPedidosUNITARIO: TFloatField
+      FieldName = 'UNITARIO'
+      OnGetText = MemPedidosUNITARIOGetText
+    end
+    object MemPedidosQTD: TIntegerField
+      FieldName = 'QTD'
+      OnGetText = MemPedidosQTDGetText
+    end
+    object MemPedidosTOTAL: TFloatField
+      FieldName = 'TOTAL'
+      OnGetText = MemPedidosTOTALGetText
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MemPedidos
+    ScopeMappings = <>
+    Left = 208
+    Top = 328
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 204
+    Top = 389
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ITEM'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'UNITARIO'
+          ControlMemberName = 'Detail1'
+        end
+        item
+          SourceMemberName = 'QTD'
+          ControlMemberName = 'Detail2'
+        end
+        item
+          SourceMemberName = 'TOTAL'
+          ControlMemberName = 'Detail3'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

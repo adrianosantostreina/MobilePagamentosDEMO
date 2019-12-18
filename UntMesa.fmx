@@ -1,0 +1,41 @@
+object FrameMesa: TFrameMesa
+  Size.Width = 80.000000000000000000
+  Size.Height = 80.000000000000000000
+  Size.PlatformDefault = False
+  object recMesa: TRectangle
+    Align = Client
+    ClipChildren = True
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 4.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object lblNumMesa: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      HitTest = True
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 52.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = '01'
+      TabOrder = 0
+    end
+    object speNumMesa: TSpeedButton
+      Align = Center
+      Size.Width = 72.000000000000000000
+      Size.Height = 72.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end
